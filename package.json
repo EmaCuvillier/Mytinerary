@@ -1,0 +1,31 @@
+{
+  "name": "proyecto-mytinerary",
+  "version": "1.0.0",
+  "description": "Proyecto Mytinerary con react y express",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./server.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmaCuvillier/mytinerary-cuvillier.git"
+  },
+  "author": "Emanuel Cuvillier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EmaCuvillier/mytinerary-cuvillier/issues"
+  },
+  "homepage": "https://github.com/EmaCuvillier/mytinerary-cuvillier#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "joi": "^17.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.4",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0"
+  }
+}
