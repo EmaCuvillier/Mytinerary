@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Proyecto Mytinerary con react y express",
   "main": "index.js",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "start": "node ./server.js",
     "heroku-postbuild": "cd client && npm install && npm run build"
@@ -25,6 +28,7 @@
     "joi": "^17.4.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.12.4",
+    "node": "^16.1.0",
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0"
   }
