@@ -4,7 +4,7 @@ const usuarioAction = {
     pedirInformacionDelUsuario: (token) =>{
         return async (dispatch, getState)=>{
             try{
-                const respuesta = await axios.get('http://localhost:4000/api/infoUsuario', {
+                const respuesta = await axios.get('https://mytinerary-mern-cuvillier.herokuapp.com/api/infoUsuario', {
                     headers: {
                         'Authorization': 'Bearer '+token
                     }

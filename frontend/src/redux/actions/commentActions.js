@@ -3,7 +3,7 @@ import axios from 'axios'
 const commentActions = {
     crearComentario: (idItinerario, comentario, tokenUsuario)=>{
         return async (dispatch, getState)=>{
-            const respuesta = await axios.post('http://localhost:4000/api/itinerario/comentario/'+idItinerario, {'comment': comentario}, {
+            const respuesta = await axios.post('https://mytinerary-mern-cuvillier.herokuapp.com/api/itinerario/comentario/'+idItinerario, {'comment': comentario}, {
                 headers: {'Authorization': 'Bearer '+tokenUsuario} 
             })
             if(respuesta){
@@ -13,7 +13,7 @@ const commentActions = {
     },
     editarUnComentario: (idComentario, tokenUsuario, comentarioEditado)=>{
         return async (dispatch, getState)=>{
-            const respuesta = await axios.put('http://localhost:4000/api/itinerario/comentario/'+idComentario, {'comment': comentarioEditado}, {
+            const respuesta = await axios.put('https://mytinerary-mern-cuvillier.herokuapp.com/api/itinerario/comentario/'+idComentario, {'comment': comentarioEditado}, {
                 headers: {'Authorization': 'Bearer '+tokenUsuario} 
             })
             if(respuesta){
@@ -23,7 +23,7 @@ const commentActions = {
     },
     eliminarUnComentario: (idComentario, tokenUsuario)=>{
         return async (dispatch, getState)=>{
-            const respuesta = await axios.delete('http://localhost:4000/api/itinerario/comentario/'+idComentario, {
+            const respuesta = await axios.delete('https://mytinerary-mern-cuvillier.herokuapp.com/api/itinerario/comentario/'+idComentario, {
                 headers: {'Authorization': 'Bearer '+tokenUsuario} 
             })
             if(respuesta){

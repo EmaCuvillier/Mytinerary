@@ -4,7 +4,7 @@ import Swal from 'sweetalert2'
 const usersActions = {
     crearUsuario: (nuevoUsuario)=>{
         return async (dispatch, getState)=>{
-            const respuesta = await axios.post('http://localhost:4000/api/users/signup', nuevoUsuario)
+            const respuesta = await axios.post('https://mytinerary-mern-cuvillier.herokuapp.com/api/users/signup', nuevoUsuario)
             if (!respuesta.data.success) {
                 return respuesta.data.errores
             }
@@ -16,7 +16,7 @@ const usersActions = {
     },
     loguearUsuario: (usuarioALoguear)=>{
         return async (dispatch, getState)=>{
-            const respuesta = await axios.post('http://localhost:4000/api/users/login', usuarioALoguear)
+            const respuesta = await axios.post('https://mytinerary-mern-cuvillier.herokuapp.com/api/users/login', usuarioALoguear)
             if(!respuesta.data.success){
                 Swal.fire({
                     icon: 'error',
@@ -37,7 +37,7 @@ const usersActions = {
     loginForzadoPorLS: (usuarioLS) =>{
         return async (dispatch, getState)=>{
             try{
-                const respuesta = await axios.get('http://localhost:4000/api/users/loginLs', {
+                const respuesta = await axios.get('https://mytinerary-mern-cuvillier.herokuapp.com/api/users/loginLs', {
                     headers: {
                         'Authorization': 'Bearer '+usuarioLS.token
                     }
