@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import likearActions from '../redux/actions/likearActions';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faComments, faPaperPlane, faTimes } from '@fortawesome/free-solid-svg-icons'
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Comments = (props)=>{
