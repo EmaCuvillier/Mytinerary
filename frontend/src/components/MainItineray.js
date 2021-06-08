@@ -7,14 +7,14 @@ const MainItinerary = ({city, itineraries})=>{
     return (
         <main className='mainItinerary'>
                 <div className='headerMainItinerary'>
-                    <div className='headerMobile' style={{backgroundImage:`url('../assets/${city[0].image}')`}}></div>
+                    <div className='headerMobile' style={{backgroundImage:`url('${city[0].image}')`}}></div>
                     <div className="fotoCiudadItinerary">
-                        <div className="d1" style={{backgroundImage:`url('../assets/${city[0].image}')`}}></div>
-                        <div className="d2" style={{backgroundImage:`url('../assets/${city[0].image}')`}}></div>
-                        <div className="d3" style={{backgroundImage:`url('../assets/${city[0].image}')`}}>
+                        <div className="d1" style={{backgroundImage:`url('${city[0].image}')`}}></div>
+                        <div className="d2" style={{backgroundImage:`url('${city[0].image}')`}}></div>
+                        <div className="d3" style={{backgroundImage:`url('${city[0].image}')`}}>
                             <div className='nameCityPort'>{city[0].name}</div>
                         </div>
-                        <div className="d4" style={{backgroundImage:`url('../assets/${city[0].image}')`}}></div>
+                        <div className="d4" style={{backgroundImage:`url('${city[0].image}')`}}></div>
                     </div>
                 </div>
                 <div className='contenedorItinerarios'>
